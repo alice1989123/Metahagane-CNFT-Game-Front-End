@@ -38,7 +38,7 @@ export async function sendLovelaces( lovelaces: string): Promise<void> {
   txBuilder.add_change_if_needed(selfaddress)
   const txBody = txBuilder.build()
   const witnesesSet = Loader.Cardano.TransactionWitnessSet.new()
-  const tx = Loader.Cardano.Transaction.new(txBody , witnesesSet )
+  const tx = Loader.Cardano.Transaction.new(txBody , witnesesSet, null )
   const txBech32 = toHex(   tx.to_bytes() )
   const VkeyHex = await window.cardano.signTx( txBech32)
   const txVkeyWitnesses = Loader.Cardano.TransactionWitnessSet.from_bytes(

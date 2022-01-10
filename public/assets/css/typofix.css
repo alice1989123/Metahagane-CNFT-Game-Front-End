@@ -1,0 +1,378 @@
+      
+/*
+Project     : Typography Fix
+Git URL     : https://github.com/themeix/typography-fix
+License     : GPL v2.0
+Last updated: 2021-03-03
+Author      : Themeix  - https://themeix.com
+*/
+.typofix {
+	--link-color:blue;  
+	--figcaption-align: center; 
+	--figcaption-color: silver; 
+	--table-border-color: LightGrey;  
+	--blockquote-bg: white; 
+	--blockquote-border-width: 1px;   
+	--blockquote-border-style: solid; 
+	--blockquote-border-radius: 0; 
+	--blockquote-font-family: "Times New Roman", Times, serif;
+	--blockquote-font-color: gray;
+	--blockquote-font-style: normal;
+	--blockquote-font-weight: 700; 
+	--blockquote-px: 24px;
+	--blockquote-py: 15px;
+	--base-font-size: 16px;
+	--text-font-family: Arial, Helvetica, sans-serif;
+	--text-font-color: gray;
+	--text-font-weight: 400;
+	--text-line-height: 1.6;
+	--heading-font-family: "Times New Roman", Times, serif;
+	--heading-font-color: black; 
+	--heading-font-weight: 700; 
+	--heading-line-height: 1.3;
+	--medium-max-width: 1096px;  
+	--spacing-size: 16px;  
+}  
+
+/*
+  Reset .typofix element styles to avoid unwanted inheritance
+*/
+.typofix{
+	font-family: var(--text-font-family);
+	line-height: var(--text-line-height);
+	font-weight: var(--text-font-weight);
+	color: var(--text-font-color);
+}
+/*
+  Block-level elements
+*/
+.typofix h1,
+.typofix h2,
+.typofix h3,
+.typofix h4,
+.typofix h5,
+.typofix h6 {
+	font-family: var(--heading-font-family);
+	font-weight: var(--heading-font-weight);
+	line-height: var(--base-line-height);
+	color: var(--heading-font-color); 
+}
+.typofix h1 {
+	font-size: calc(var(--base-font-size) * 2.75);
+}
+
+.typofix h2 {
+	font-size: calc(var(--base-font-size) * 2.25);
+}
+
+.typofix h3 {
+	font-size: calc(var(--base-font-size) * 1.5);
+}
+
+.typofix h4 {
+	font-size: calc(var(--base-font-size) * 1.25);
+}
+
+.typofix h5 {
+	font-size: calc(var(--base-font-size) * 1);
+}
+.typofix h6 {
+	font-size: calc(var(--base-font-size) * 0.75);
+}
+
+/*
+  Initialize spacing 
+*/
+.typofix figure,
+.typofix figcaption,
+.typofix iframe,
+.typofix object,
+.typofix iframe,
+.typofix caption,
+.typofix applet,
+.typofix embed,
+.typofix audio, 
+.typofix video,
+.typofix dl,
+.typofix p,
+.typofix hr,
+.typofix pre,
+.typofix table,
+.typofix ol,
+.typofix ul,
+.typofix h1,
+.typofix h2,
+.typofix h3,
+.typofix h4, 
+.typofix h5,
+.typofix h6,
+.typofix ul { 
+	margin-top: 0;
+	margin-bottom: var(--spacing-size);
+} 
+.typofix table,
+.typofix th,
+.typofix td {
+	border: 1px solid; 
+	border-color: var(--table-border-color); 
+}
+/*
+  Image elements
+*/
+.typofix .medium-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.typofix .medium-image img{
+	max-width: var(--medium-max-width);
+	width: 100vw; 
+	display: block;  
+}
+.typofix .fluid-image{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.typofix .fluid-image img{
+	width: 100vw;
+	max-width: 100vw;
+}
+/*
+  Inline elements
+*/
+.typofix blockquote {
+	background-color: var(--blockquote-bg);
+	border-left-width: var(--blockquote-border-width); 
+	border-left-style: var(--blockquote-border-style);
+	border-left-color: var(--link-color);
+	border-radius: var(--blockquote-border-radius);
+	font-family: var(--blockquote-font-family);
+	color: var(--blockquote-font-color); 
+	font-style: var(--blockquote-font-style);
+	font-weight: var(--blockquote-font-weight);
+	padding: var(--blockquote-py) var(--blockquote-px);
+	margin-bottom: var(--spacing-size); 
+}
+.typofix blockquote cite,
+.typofix blockquote cite a{
+	opacity: .8; 
+	text-decoration: none; 
+	color: var(--blockquote-font-color); 
+} 
+.typofix code {
+	vertical-align: middle;
+	padding: .15em .4em;
+	color: var(--heading-font-color);
+	background: var(--table-border-color);
+} 
+.typofix pre {
+	border-radius: var(--blockquote-border-radius);
+	display: block;
+	max-width: 100%; 
+	overflow: auto; 
+	padding: calc(1em - 1px) 1.5em;
+	white-space: pre-wrap;
+}
+.typofix pre code{
+	padding: 0;
+	background: transparent; 
+}
+.typofix a {
+	text-decoration: underline;
+	color: var(--link-color);
+}
+.typofix b {
+	font-weight: bolder;
+}
+.typofix strong {
+	font-weight: bold;
+}
+.typofix u{
+	text-decoration: underline; 
+}
+.typofix i {
+	font-style: italic;
+}
+.typofix dfn {
+    font-style: italic;
+}
+.typofix em {
+	font-style: italic; 
+	font-weight: bold;
+}
+
+.typofix abbr[title] {
+	border-bottom: 1px dotted gray;
+}
+.typofix cite {
+	font-style: italic;
+}
+.typofix del {
+	color: red;
+	text-decoration: line-through;
+}
+
+.typofix ins {
+	color: green;
+	text-decoration: none;
+}
+
+.typofix kbd {
+	padding: .2rem .4rem;
+	font-size: .875em;
+	color: white;
+	background-color:black;
+	border-radius: 0;
+}
+
+.typofix mark {
+	background-color: yellow
+}
+.typofix small {
+	font-size: .75em;
+}
+
+.typofix s {
+	text-decoration: line-through;
+}
+.typofix sub {
+	font-size: 80%;
+	vertical-align: sub;
+}
+
+.typofix sup {
+	font-size: .75em;
+	vertical-align: super;
+}
+
+.typofix var {
+	font-style: italic;
+}
+.typofix samp {
+    font-family: monospace; 
+}
+.typofix hr {
+    border-color:var(--table-border-color); 
+}  
+.typofix input[type="text"],
+.typofix input[type="email"],
+.typofix input[type="search"],
+.typofix input[type="password"],
+.typofix input[type="tel"],
+.typofix input[type="url"],
+.typofix input[type="image"], 
+.typofix input[type="tel"],
+.typofix input[type="date"],
+.typofix input[type="time"],
+.typofix input[type="datetime"],
+.typofix input[type="datetime-local"],
+.typofix input[type="month"],
+.typofix input[type="week"],
+.typofix select,
+.typofix textarea { 
+    border: 1px solid var(--table-border-color); 
+	padding: .2em .75em;   
+}   
+.typofix input[type="button"],
+.typofix input[type="reset"],
+.typofix input[type="submit"], 
+.typofix input[type="reset"], 
+.typofix input[type="radio"],  
+.typofix button{  
+    background-color: lightgray; 
+    color: black;
+	padding: .2em .75em; 
+    border-width: 1px;   
+	border-radius: 2px;
+    border-style: outset;
+    border-color: silver;   
+}    
+
+/*
+  Lists
+*/
+.typofix ol {
+	list-style: none; 
+	padding-left: 1rem;
+	counter-reset: item;
+}
+.typofix ol li:before { 
+	content: counter(item) ". ";
+	counter-increment: item;
+	color: var(--link-color); 
+	margin-left: -1em;  
+}
+.typofix ul { 
+	list-style: none;  
+	padding-left: 1rem; 
+}
+.typofix ul li::before {  
+	content: "\2022";
+	color: var(--link-color);  
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em; 
+}
+.typofix dl {
+	display: block;
+}
+.typofix dt {
+	display: block;
+}
+.typofix dd {
+    display: block;
+    margin-inline-start: 40px; 
+}
+/*
+  Tables
+*/
+.typofix .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.typofix table { 
+	/* border set above */
+	border-collapse: collapse;
+	/* margin set above */
+	table-layout: auto;
+}
+.typofix caption {
+	caption-side: top;
+	font-weight: bold;
+	/* line-height set above */
+	/* margin set above */
+	margin-top: 0;
+}
+.typofix thead *{ 
+	border-bottom-color: gray;
+}
+.typofix thead *, 
+.typofix th{ 
+	white-space: nowrap;  
+}
+.typofix th,
+.typofix td {
+	/* border set above */
+	/* color set above */
+	/* line-height set above */
+	padding: calc(.75em - .5px);  
+	text-align: center;
+}
+/*
+  Media
+*/
+.typofix embed,
+.typofix iframe,
+.typofix figure img,
+.typofix object {
+	display: inline-block;
+	max-width: 100%;
+}
+.typofix figcaption {
+	font-size: .75em;
+	margin-top: 8px; 
+	text-align: var(--figcaption-align);
+	color: var(--figcaption-color);
+}

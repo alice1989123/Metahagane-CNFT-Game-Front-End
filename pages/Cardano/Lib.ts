@@ -1,3 +1,4 @@
+//@ts-nocheck
 import Loader from "./Loader.js";
 import { addressBech32, fromHex, getSelfUTXOs, initTx, toHex } from "./Utils";
 import { getParams } from "../api/server.js";
@@ -38,7 +39,7 @@ export async function sendLovelaces( lovelaces: string): Promise<void> {
   txBuilder.add_change_if_needed(selfaddress)
   const txBody = txBuilder.build()
   const witnesesSet = Loader.Cardano.TransactionWitnessSet.new()
-  const tx = Loader.Cardano.Transaction.new(txBody , witnesesSet, null )
+  const tx = Loader.Cardano.Transaction.new(txBody , witnesesSet )
   const txBech32 = toHex(   tx.to_bytes() )
   const VkeyHex = await window.cardano.signTx( txBech32)
   const txVkeyWitnesses = Loader.Cardano.TransactionWitnessSet.from_bytes(

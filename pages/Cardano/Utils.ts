@@ -1,5 +1,5 @@
 import Loader from "./Loader.js";
-import { languageViews } from "./LanguageViews.ts";
+import { languageViews } from "./LanguageViews.js";
 
 export function toHex(bytes) {
   return Buffer.from(bytes, "hex").toString("hex");

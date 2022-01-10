@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import Loader from "./Loader.js";
 import { languageViews } from "./LanguageViews.js";
 

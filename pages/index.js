@@ -63,7 +63,7 @@ export default function Home() {
               >
                 <img
                   className="w-full sm:h-90 object-cover"
-                  src="assets/images/cards/Card-Charcoal.png"
+                  src="/Card-Charcoal.png"
                   alt="title"
                 />
                 <div className="category-content text-center bg-white shadow transition duration-500 hover:shadow-lg rounded absolute bottom-8 right-8 left-8 p-4">
@@ -79,7 +79,7 @@ export default function Home() {
               >
                 <img
                   className="w-full sm:h-90 object-cover"
-                  src="assets/images/cards/Card-Tamahagane.png"
+                  src="/Card-Tamahagane.png"
                   alt="title"
                 />
                 <div className="category-content text-center bg-white shadow transition duration-500 hover:shadow-lg rounded absolute bottom-8 right-8 left-8 p-4">
@@ -95,7 +95,7 @@ export default function Home() {
               >
                 <img
                   className="w-full sm:h-90 object-cover"
-                  src="assets/images/cards/Card-Hammer.png"
+                  src="/Card-Hammer.png"
                   alt="title"
                 />
                 <div className="category-content text-center bg-white shadow transition duration-500 hover:shadow-lg rounded absolute bottom-8 right-8 left-8 p-4">
@@ -111,7 +111,7 @@ export default function Home() {
               >
                 <img
                   className="w-full sm:h-90 object-cover"
-                  src="assets/images/cards/Card-Katana.png"
+                  src="/Card-Katana.png"
                   alt="title"
                 />
                 <div className="category-content text-center bg-white shadow transition duration-500 hover:shadow-lg rounded absolute bottom-8 right-8 left-8 p-4">
@@ -163,7 +163,7 @@ export default function Home() {
                   <div className="flex-shrink-0 relative mr-6">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                     <span className="absolute bottom-3 -right-1">
@@ -224,35 +224,35 @@ export default function Home() {
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-Charcoal.png"
+                      src="/Card-Charcoal.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-Charcoal.png"
+                      src="/Card-Charcoal.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-IronOre.png"
+                      src="/Card-IronOre.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-IronOre.png"
+                      src="/Card-IronOre.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-IronOre.png"
+                      src="/Card-IronOre.png"
                       alt="title"
                     />
                   </a>
@@ -272,7 +272,7 @@ export default function Home() {
                   <div className="flex-shrink-0 relative mr-6">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-Anvil.png"
+                      src="/Card-Anvil.png"
                       alt="title"
                     />
                     <span className="absolute bottom-3 -right-1">
@@ -333,49 +333,49 @@ export default function Home() {
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-BloomIron.png"
+                      src="/Card-BloomIron.png"
                       alt="title"
                     />
                   </a>
                   <a href="item-single.html">
                     <img
                       className="w-20 h-25 rounded object-cover"
-                      src="assets/images/cards/Card-Silver.png"
+                      src="/Card-Silver.png"
                       alt="title"
                     />
                   </a>
